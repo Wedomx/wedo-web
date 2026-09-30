@@ -10,11 +10,8 @@ html {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-
     background: #041a38;
-
     color: white;
-
     min-height: 100vh;
 }
 
@@ -29,9 +26,7 @@ body {
     padding: 18px 7%;
 
     display: flex;
-
     align-items: center;
-
     justify-content: space-between;
 
     position: absolute;
@@ -51,7 +46,6 @@ body {
     height: 130px;
 
     display: flex;
-
     align-items: center;
 }
 
@@ -60,7 +54,6 @@ body {
     height: 130px;
 
     position: relative;
-
     overflow: hidden;
 }
 
@@ -73,7 +66,6 @@ body {
     position: absolute;
 
     left: -12px;
-
     top: -168px;
 }
 
@@ -83,9 +75,7 @@ body {
 
 .menu {
     display: flex;
-
     align-items: center;
-
     gap: 34px;
 
     position: relative;
@@ -117,7 +107,6 @@ body {
     display: none;
 
     width: 52px;
-
     height: 52px;
 
     padding: 0;
@@ -127,23 +116,12 @@ body {
     border:
         1px
         solid
-        rgba(
-            255,
-            255,
-            255,
-            0.20
-        );
+        rgba(255, 255, 255, 0.20);
 
     background:
-        rgba(
-            255,
-            255,
-            255,
-            0.06
-        );
+        rgba(255, 255, 255, 0.06);
 
     align-items: center;
-
     justify-content: center;
 
     flex-direction: column;
@@ -159,7 +137,6 @@ body {
     display: block;
 
     width: 24px;
-
     height: 3px;
 
     border-radius: 5px;
@@ -193,7 +170,6 @@ body {
     min-height: 100vh;
 
     display: flex;
-
     align-items: center;
 
     position: relative;
@@ -304,7 +280,6 @@ button,
     display: inline-flex;
 
     align-items: center;
-
     justify-content: center;
 
     color: white;
@@ -316,12 +291,7 @@ button,
     border:
         2px
         solid
-        rgba(
-            255,
-            255,
-            255,
-            0.9
-        );
+        rgba(255, 255, 255, 0.9);
 }
 
 .boton-secundario:hover {
@@ -340,11 +310,9 @@ button,
     position: absolute;
 
     top: 0;
-
     right: -90px;
 
     width: 45%;
-
     height: 100%;
 
     pointer-events: none;
@@ -358,11 +326,9 @@ button,
 
 .forma-1 {
     width: 175px;
-
     height: 125%;
 
     right: 105px;
-
     top: -100px;
 
     background: #ff7900;
@@ -370,41 +336,27 @@ button,
 
 .forma-2 {
     width: 110px;
-
     height: 125%;
 
     right: 290px;
-
     top: -110px;
 
     border:
         2px
         solid
-        rgba(
-            255,
-            255,
-            255,
-            0.18
-        );
+        rgba(255, 255, 255, 0.18);
 }
 
 .linea-diagonal {
     position: absolute;
 
     width: 2px;
-
     height: 130%;
 
     background:
-        rgba(
-            255,
-            255,
-            255,
-            0.18
-        );
+        rgba(255, 255, 255, 0.18);
 
     right: 245px;
-
     top: -100px;
 
     transform: rotate(24deg);
@@ -441,11 +393,9 @@ button,
     position: absolute;
 
     width: 420px;
-
     height: 1050px;
 
     right: -250px;
-
     top: -360px;
 
     background:
@@ -464,11 +414,9 @@ button,
     position: absolute;
 
     width: 250px;
-
     height: 680px;
 
     left: -170px;
-
     bottom: -270px;
 
     background:
@@ -499,11 +447,9 @@ button,
     position: absolute;
 
     width: 190px;
-
     height: 190px;
 
     right: 2%;
-
     top: 5px;
 
     background-image:
@@ -572,7 +518,7 @@ button,
 }
 
 /* =========================================
-   TARJETAS DE SERVICIOS
+   TARJETAS SERVICIOS
 ========================================= */
 
 .rejilla-servicios {
@@ -595,9 +541,12 @@ button,
             25% - 18px
         );
 
-    min-height: 390px;
+    min-height: 345px;
 
-    padding: 32px;
+    padding:
+        38px
+        32px
+        32px;
 
     background:
         linear-gradient(
@@ -611,12 +560,7 @@ button,
     border:
         1px
         solid
-        rgba(
-            7,
-            29,
-            63,
-            0.10
-        );
+        rgba(7,29,63,0.10);
 
     display: flex;
 
@@ -630,12 +574,7 @@ button,
         0
         16px
         40px
-        rgba(
-            4,
-            26,
-            56,
-            0.09
-        );
+        rgba(4,26,56,0.09);
 
     transition: 0.25s;
 }
@@ -645,53 +584,19 @@ button,
         translateY(-9px);
 
     border-color:
-        rgba(
-            255,
-            121,
-            0,
-            0.30
-        );
-}
-
-.numero-servicio {
-    width: 56px;
-
-    height: 56px;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    background:
-        linear-gradient(
-            145deg,
-            #041a38,
-            #0b2d5e
-        );
-
-    color: #ff7900;
-
-    border-radius: 14px;
-
-    font-size: 17px;
-
-    font-weight: 800;
-
-    margin-bottom: 26px;
+        rgba(255,121,0,0.30);
 }
 
 .tipo-servicio {
     color: #ff7900;
 
-    font-size: 11px;
+    font-size: 12px;
 
     font-weight: 900;
 
-    letter-spacing: 1.8px;
+    letter-spacing: 2px;
 
-    margin-bottom: 12px;
+    margin-bottom: 14px;
 }
 
 .tarjeta-servicio h3 {
@@ -760,7 +665,6 @@ button,
     display: flex;
 
     align-items: center;
-
     justify-content: space-between;
 
     gap: 40px;
@@ -860,11 +764,9 @@ button,
 
 .decoracion-nosotros-1 {
     width: 170px;
-
     height: 900px;
 
     right: -90px;
-
     top: -180px;
 
     background: #ff7900;
@@ -876,22 +778,15 @@ button,
 
 .decoracion-nosotros-2 {
     width: 130px;
-
     height: 850px;
 
     right: 110px;
-
     top: -170px;
 
     border:
         2px
         solid
-        rgba(
-            255,
-            255,
-            255,
-            0.12
-        );
+        rgba(255,255,255,0.12);
 
     transform: rotate(27deg);
 }
@@ -972,12 +867,7 @@ button,
     border:
         1px
         solid
-        rgba(
-            255,
-            255,
-            255,
-            0.12
-        );
+        rgba(255,255,255,0.12);
 
     position: relative;
 
@@ -990,11 +880,9 @@ button,
     position: absolute;
 
     width: 110px;
-
     height: 380px;
 
     right: -55px;
-
     bottom: -100px;
 
     background: #ff7900;
@@ -1006,7 +894,6 @@ button,
 
 .isotipo-filosofia {
     width: 155px;
-
     height: 105px;
 
     display: flex;
@@ -1060,7 +947,6 @@ button,
 
 .linea-filosofia {
     width: 80px;
-
     height: 5px;
 
     margin-top: 32px;
@@ -1103,12 +989,7 @@ button,
     border:
         1px
         solid
-        rgba(
-            255,
-            255,
-            255,
-            0.12
-        );
+        rgba(255,255,255,0.12);
 
     transition: 0.25s;
 }
@@ -1118,12 +999,7 @@ button,
         translateY(-7px);
 
     border-color:
-        rgba(
-            255,
-            121,
-            0,
-            0.55
-        );
+        rgba(255,121,0,0.55);
 
     background:
         linear-gradient(
@@ -1133,16 +1009,39 @@ button,
         );
 }
 
-.pilar-numero {
+.pilar-encabezado {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 28px;
+}
+
+.pilar-linea {
+    width: 40px;
+    height: 4px;
+
+    border-radius: 999px;
+
+    background: #ff7900;
+
+    flex-shrink: 0;
+}
+
+.pilar-etiqueta {
     color: #ff7900;
 
-    font-size: 15px;
+    font-size: 13px;
 
     font-weight: 900;
 
     letter-spacing: 2px;
 
-    margin-bottom: 30px;
+    text-transform: uppercase;
+
+    line-height: 1;
 }
 
 .pilar h3 {
@@ -1179,12 +1078,7 @@ button,
     border:
         1px
         solid
-        rgba(
-            255,
-            255,
-            255,
-            0.12
-        );
+        rgba(255,255,255,0.12);
 
     position: relative;
 
@@ -1197,22 +1091,15 @@ button,
     position: absolute;
 
     width: 220px;
-
     height: 650px;
 
     right: -145px;
-
     top: -230px;
 
     border:
         2px
         solid
-        rgba(
-            255,
-            255,
-            255,
-            0.07
-        );
+        rgba(255,255,255,0.07);
 
     transform: rotate(27deg);
 }
@@ -1223,20 +1110,13 @@ button,
     position: absolute;
 
     width: 100px;
-
     height: 400px;
 
     right: -30px;
-
     bottom: -170px;
 
     background:
-        rgba(
-            255,
-            121,
-            0,
-            0.13
-        );
+        rgba(255,121,0,0.13);
 
     transform: rotate(27deg);
 }
@@ -1325,12 +1205,7 @@ button,
     border:
         1px
         solid
-        rgba(
-            255,
-            255,
-            255,
-            0.11
-        );
+        rgba(255,255,255,0.11);
 
     position: relative;
 
@@ -1345,20 +1220,13 @@ button,
     position: absolute;
 
     width: 60px;
-
     height: 180px;
 
     right: -40px;
-
     bottom: -65px;
 
     background:
-        rgba(
-            255,
-            121,
-            0,
-            0.11
-        );
+        rgba(255,121,0,0.11);
 
     transform: rotate(27deg);
 }
@@ -1368,17 +1236,11 @@ button,
         translateY(-7px);
 
     border-color:
-        rgba(
-            255,
-            121,
-            0,
-            0.50
-        );
+        rgba(255,121,0,0.50);
 }
 
 .icono-paso {
     width: 54px;
-
     height: 54px;
 
     border-radius: 14px;
@@ -1386,7 +1248,6 @@ button,
     display: flex;
 
     align-items: center;
-
     justify-content: center;
 
     background: #ff7900;
@@ -1475,40 +1336,26 @@ button,
 
 .decoracion-contacto-1 {
     width: 330px;
-
     height: 850px;
 
     right: -220px;
-
     top: -250px;
 
     background:
-        rgba(
-            4,
-            34,
-            73,
-            0.07
-        );
+        rgba(4,34,73,0.07);
 
     transform: rotate(28deg);
 }
 
 .decoracion-contacto-2 {
     width: 160px;
-
     height: 550px;
 
     left: -110px;
-
     bottom: -220px;
 
     background:
-        rgba(
-            255,
-            121,
-            0,
-            0.12
-        );
+        rgba(255,121,0,0.12);
 
     transform: rotate(28deg);
 }
@@ -1586,20 +1433,13 @@ button,
     position: absolute;
 
     width: 130px;
-
     height: 500px;
 
     right: -65px;
-
     top: -120px;
 
     background:
-        rgba(
-            255,
-            121,
-            0,
-            0.13
-        );
+        rgba(255,121,0,0.13);
 
     transform: rotate(28deg);
 }
@@ -1672,22 +1512,12 @@ button,
     border-radius: 15px;
 
     background:
-        rgba(
-            255,
-            255,
-            255,
-            0.055
-        );
+        rgba(255,255,255,0.055);
 
     border:
         1px
         solid
-        rgba(
-            255,
-            255,
-            255,
-            0.10
-        );
+        rgba(255,255,255,0.10);
 
     color: white;
 
@@ -1698,20 +1528,10 @@ button,
 
 a.dato-contacto:hover {
     background:
-        rgba(
-            255,
-            255,
-            255,
-            0.09
-        );
+        rgba(255,255,255,0.09);
 
     border-color:
-        rgba(
-            255,
-            121,
-            0,
-            0.45
-        );
+        rgba(255,121,0,0.45);
 
     transform:
         translateX(4px);
@@ -1727,7 +1547,6 @@ a.dato-contacto:hover {
     display: flex;
 
     align-items: center;
-
     justify-content: center;
 
     border-radius: 12px;
@@ -1779,7 +1598,6 @@ a.dato-contacto:hover {
     display: inline-flex;
 
     align-items: center;
-
     justify-content: center;
 
     gap: 12px;
@@ -1828,12 +1646,7 @@ a.dato-contacto:hover {
     border:
         1px
         solid
-        rgba(
-            4,
-            26,
-            56,
-            0.10
-        );
+        rgba(4,26,56,0.10);
 }
 
 .formulario-titulo {
@@ -1934,12 +1747,7 @@ a.dato-contacto:hover {
         0
         0
         3px
-        rgba(
-            255,
-            121,
-            0,
-            0.10
-        );
+        rgba(255,121,0,0.10);
 }
 
 .boton-formulario {
@@ -1950,7 +1758,6 @@ a.dato-contacto:hover {
     display: flex;
 
     align-items: center;
-
     justify-content: center;
 
     gap: 12px;
@@ -2128,12 +1935,7 @@ a.dato-contacto:hover {
     border-top:
         1px
         solid
-        rgba(
-            255,
-            255,
-            255,
-            0.09
-        );
+        rgba(255,255,255,0.09);
 }
 
 .footer-inferior p {
@@ -2279,33 +2081,18 @@ a.dato-contacto:hover {
         border-radius: 16px;
 
         background:
-            rgba(
-                3,
-                21,
-                47,
-                0.98
-            );
+            rgba(3,21,47,0.98);
 
         border:
             1px
             solid
-            rgba(
-                255,
-                255,
-                255,
-                0.10
-            );
+            rgba(255,255,255,0.10);
 
         box-shadow:
             0
             18px
             45px
-            rgba(
-                0,
-                0,
-                0,
-                0.28
-            );
+            rgba(0,0,0,0.28);
 
         transform:
             translateY(-15px);
@@ -2350,12 +2137,7 @@ a.dato-contacto:hover {
 
     .menu a:hover {
         background:
-            rgba(
-                255,
-                255,
-                255,
-                0.06
-            );
+            rgba(255,255,255,0.06);
     }
 
     /* HERO */
@@ -2481,17 +2263,17 @@ a.dato-contacto:hover {
     .tarjeta-servicio {
         width: 100%;
 
-        min-height: 315px;
+        min-height: 285px;
 
-        padding: 28px;
+        padding:
+            30px
+            28px;
     }
 
-    .numero-servicio {
-        width: 52px;
+    .tipo-servicio {
+        margin-bottom: 12px;
 
-        height: 52px;
-
-        margin-bottom: 22px;
+        font-size: 12px;
     }
 
     .tarjeta-servicio h3 {
@@ -2597,6 +2379,24 @@ a.dato-contacto:hover {
         min-height: 230px;
 
         padding: 28px;
+    }
+
+    .pilar-encabezado {
+        gap: 10px;
+
+        margin-bottom: 22px;
+    }
+
+    .pilar-linea {
+        width: 34px;
+
+        height: 4px;
+    }
+
+    .pilar-etiqueta {
+        font-size: 12px;
+
+        letter-spacing: 1.8px;
     }
 
     .pilar h3 {
