@@ -14,6 +14,10 @@ body {
     color: white;
 }
 
+img {
+    max-width: 100%;
+}
+
 :root {
     --azul-profundo: #03152f;
     --azul: #052a57;
@@ -31,18 +35,13 @@ body {
 .encabezado {
     width: 100%;
     height: 175px;
-
     padding: 18px 7%;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     position: absolute;
-
     top: 0;
     left: 0;
-
     z-index: 50;
 }
 
@@ -58,20 +57,15 @@ body {
 .recorte-logo {
     width: 390px;
     height: 130px;
-
     position: relative;
-
     overflow: hidden;
 }
 
 .logo {
     width: 420px;
     height: 420px;
-
     object-fit: contain;
-
     position: absolute;
-
     left: -12px;
     top: -168px;
 }
@@ -82,25 +76,20 @@ body {
 
 .menu {
     display: flex;
-
     align-items: center;
-
     gap: 34px;
-
     position: relative;
-
     z-index: 30;
 }
 
 .menu a {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
     color: white;
-
     text-decoration: none;
-
     font-size: 17px;
-
     font-weight: 700;
-
     transition: 0.2s;
 }
 
@@ -114,51 +103,31 @@ body {
 
 .boton-menu {
     display: none;
-
     width: 52px;
     height: 52px;
-
     padding: 0;
-
     border-radius: 12px;
-
-    border:
-        1px
-        solid
-        rgba(255,255,255,0.20);
-
-    background:
-        rgba(255,255,255,0.07);
-
+    border: 1px solid rgba(255,255,255,0.20);
+    background: rgba(255,255,255,0.07);
     align-items: center;
     justify-content: center;
-
     flex-direction: column;
-
     gap: 6px;
-
     position: relative;
-
     z-index: 60;
 }
 
 .boton-menu span {
     display: block;
-
     width: 24px;
     height: 3px;
-
     background: white;
-
     border-radius: 5px;
-
     transition: 0.25s;
 }
 
 .boton-menu.activo span:nth-child(1) {
-    transform:
-        translateY(9px)
-        rotate(45deg);
+    transform: translateY(9px) rotate(45deg);
 }
 
 .boton-menu.activo span:nth-child(2) {
@@ -166,9 +135,7 @@ body {
 }
 
 .boton-menu.activo span:nth-child(3) {
-    transform:
-        translateY(-9px)
-        rotate(-45deg);
+    transform: translateY(-9px) rotate(-45deg);
 }
 
 /* =========================================
@@ -177,20 +144,11 @@ body {
 
 .hero {
     min-height: 100vh;
-
-    padding:
-        235px
-        7%
-        90px;
-
+    padding: 235px 7% 90px;
     display: flex;
-
     align-items: center;
-
     position: relative;
-
     overflow: hidden;
-
     background:
         radial-gradient(
             circle at 63% 50%,
@@ -202,38 +160,23 @@ body {
 
 .contenido-hero {
     width: 100%;
-
     max-width: 800px;
-
     position: relative;
-
     z-index: 5;
 }
 
 .hero-etiqueta {
     color: var(--naranja);
-
     font-size: 13px;
-
     font-weight: 900;
-
     letter-spacing: 2.5px;
-
     margin-bottom: 22px;
 }
 
 .hero h1 {
-    font-size:
-        clamp(
-            60px,
-            7vw,
-            108px
-        );
-
+    font-size: clamp(60px, 7vw, 108px);
     line-height: 0.94;
-
     letter-spacing: -4px;
-
     margin-bottom: 32px;
 }
 
@@ -243,13 +186,9 @@ body {
 
 .descripcion {
     max-width: 650px;
-
     color: #dce6f1;
-
     font-size: 21px;
-
     line-height: 1.6;
-
     margin-bottom: 38px;
 }
 
@@ -259,39 +198,24 @@ body {
 
 .botones {
     display: flex;
-
     gap: 16px;
-
     flex-wrap: wrap;
 }
 
 button,
 .boton-secundario {
     min-height: 58px;
-
-    padding:
-        0
-        30px;
-
+    padding: 0 30px;
     border-radius: 10px;
-
     font-size: 17px;
-
     font-weight: 800;
-
     cursor: pointer;
-
     transition: 0.2s;
 }
 
 .boton-principal {
     background: var(--naranja);
-
-    border:
-        2px
-        solid
-        var(--naranja);
-
+    border: 2px solid var(--naranja);
     color: white;
 }
 
@@ -301,34 +225,22 @@ button,
 
 .boton-principal:hover {
     background: var(--naranja-claro);
-
-    transform:
-        translateY(-3px);
+    transform: translateY(-3px);
 }
 
 .boton-secundario {
     display: inline-flex;
-
     align-items: center;
     justify-content: center;
-
     text-decoration: none;
-
     color: white;
-
-    border:
-        2px
-        solid
-        rgba(255,255,255,0.85);
+    border: 2px solid rgba(255,255,255,0.85);
 }
 
 .boton-secundario:hover {
     color: var(--azul-profundo);
-
     background: white;
-
-    transform:
-        translateY(-3px);
+    transform: translateY(-3px);
 }
 
 /* =========================================
@@ -338,29 +250,22 @@ button,
 .decoracion {
     width: 45%;
     height: 100%;
-
     position: absolute;
-
     right: -80px;
     top: 0;
-
     pointer-events: none;
 }
 
 .forma {
     position: absolute;
-
-    transform:
-        rotate(25deg);
+    transform: rotate(25deg);
 }
 
 .forma-1 {
     width: 165px;
     height: 130%;
-
     top: -120px;
     right: 110px;
-
     background:
         linear-gradient(
             180deg,
@@ -372,30 +277,19 @@ button,
 .forma-2 {
     width: 120px;
     height: 130%;
-
     right: 305px;
     top: -130px;
-
-    border:
-        2px
-        solid
-        rgba(255,255,255,0.11);
+    border: 2px solid rgba(255,255,255,0.11);
 }
 
 .linea-diagonal {
     width: 2px;
     height: 130%;
-
     position: absolute;
-
     right: 250px;
     top: -100px;
-
-    background:
-        rgba(255,255,255,0.15);
-
-    transform:
-        rotate(25deg);
+    background: rgba(255,255,255,0.15);
+    transform: rotate(25deg);
 }
 
 /* =========================================
@@ -403,13 +297,8 @@ button,
 ========================================= */
 
 .seccion-servicios {
-    padding:
-        105px
-        7%
-        115px;
-
+    padding: 105px 7% 115px;
     color: var(--azul-profundo);
-
     background:
         linear-gradient(
             135deg,
@@ -417,94 +306,60 @@ button,
             #f5f8fc 45%,
             #eaf0f6 100%
         );
-
     position: relative;
-
     overflow: hidden;
 }
 
 .seccion-servicios::after {
     content: "";
-
     width: 230px;
     height: 680px;
-
     position: absolute;
-
     right: -160px;
     top: -190px;
-
-    transform:
-        rotate(25deg);
-
-    background:
-        rgba(255,121,0,0.10);
+    transform: rotate(25deg);
+    background: rgba(255,121,0,0.10);
 }
 
 .contenedor-servicios {
     width: 100%;
-
     max-width: 1400px;
-
     margin: 0 auto;
-
     position: relative;
-
     z-index: 2;
 }
 
 .servicios-intro {
     display: grid;
-
-    grid-template-columns:
-        1fr
-        0.75fr;
-
+    grid-template-columns: 1fr 0.75fr;
     gap: 70px;
-
     align-items: end;
-
     margin-bottom: 48px;
 }
 
 .mini-titulo {
     color: var(--naranja);
-
     font-size: 13px;
-
     font-weight: 900;
-
     letter-spacing: 2.5px;
-
     margin-bottom: 15px;
 }
 
 .servicios-intro h2 {
-    font-size:
-        clamp(
-            48px,
-            5vw,
-            74px
-        );
-
+    font-size: clamp(48px, 5vw, 74px);
     line-height: 0.98;
-
     letter-spacing: -3px;
 }
 
 .servicios-intro h2 span {
     display: block;
-
     color: var(--naranja);
 }
 
 .servicios-intro-texto {
     max-width: 580px;
-
     color: #5a687b;
-
     font-size: 18px;
-
     line-height: 1.65;
 }
 
@@ -514,202 +369,100 @@ button,
 
 .visuales-servicios {
     display: grid;
-
-    grid-template-columns:
-        repeat(
-            3,
-            1fr
-        );
-
+    grid-template-columns: repeat(3, 1fr);
     gap: 18px;
 }
 
 .visual-card {
     min-height: 390px;
-
     border-radius: 19px;
-
     position: relative;
-
     overflow: hidden;
-
     text-decoration: none;
-
     color: white;
-
     display: flex;
-
     align-items: flex-end;
-
     background-color: #0a3262;
-
-    background-size: cover;
-
-    background-position: center;
-
-    border:
-        1px
-        solid
-        rgba(3,21,47,0.14);
-
-    box-shadow:
-        0
-        16px
-        38px
-        rgba(3,21,47,0.13);
-
+    border: 1px solid rgba(3,21,47,0.14);
+    box-shadow: 0 16px 38px rgba(3,21,47,0.13);
     transition: 0.25s;
 }
 
+.visual-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    background:
+        linear-gradient(
+            180deg,
+            rgba(3,21,47,0.03) 0%,
+            rgba(3,21,47,0.25) 42%,
+            rgba(3,21,47,0.98) 100%
+        );
+}
+
+.visual-card-imagen {
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    object-fit: cover;
+    object-position: center;
+}
+
 .visual-card:hover {
-    transform:
-        translateY(-7px);
-
-    box-shadow:
-        0
-        22px
-        45px
-        rgba(3,21,47,0.18);
-
-    border-color:
-        rgba(255,121,0,0.55);
-}
-
-.visual-tramites {
-    background-image:
-        linear-gradient(
-            180deg,
-            rgba(3,21,47,0.03) 0%,
-            rgba(3,21,47,0.25) 42%,
-            rgba(3,21,47,0.98) 100%
-        ),
-        url("servicio-tramites.jpg");
-}
-
-.visual-migracion {
-    background-image:
-        linear-gradient(
-            180deg,
-            rgba(3,21,47,0.03) 0%,
-            rgba(3,21,47,0.26) 42%,
-            rgba(3,21,47,0.98) 100%
-        ),
-        url("servicio-migracion.jpg");
-}
-
-.visual-diseno {
-    background-image:
-        linear-gradient(
-            180deg,
-            rgba(3,21,47,0.03) 0%,
-            rgba(3,21,47,0.25) 42%,
-            rgba(3,21,47,0.98) 100%
-        ),
-        url("servicio-diseno.jpg");
-}
-
-.visual-soporte {
-    background-image:
-        linear-gradient(
-            180deg,
-            rgba(3,21,47,0.03) 0%,
-            rgba(3,21,47,0.25) 42%,
-            rgba(3,21,47,0.98) 100%
-        ),
-        url("servicio-soporte.jpg");
-}
-
-.visual-impresion {
-    background-image:
-        linear-gradient(
-            180deg,
-            rgba(3,21,47,0.03) 0%,
-            rgba(3,21,47,0.25) 42%,
-            rgba(3,21,47,0.98) 100%
-        ),
-        url("servicio-impresion.jpg");
-}
-
-.visual-equipo {
-    background-image:
-        linear-gradient(
-            180deg,
-            rgba(3,21,47,0.03) 0%,
-            rgba(3,21,47,0.25) 42%,
-            rgba(3,21,47,0.98) 100%
-        ),
-        url("servicio-equipos.jpg");
+    transform: translateY(-7px);
+    box-shadow: 0 22px 45px rgba(3,21,47,0.18);
+    border-color: rgba(255,121,0,0.55);
 }
 
 .visual-contenido {
     width: 100%;
-
-    padding:
-        28px
-        27px;
+    padding: 28px 27px;
+    position: relative;
+    z-index: 2;
 }
 
 .visual-tipo {
     color: var(--naranja);
-
     font-size: 11px;
-
     font-weight: 900;
-
     letter-spacing: 1.6px;
-
     margin-bottom: 10px;
 }
 
 .visual-card h3 {
     font-size: 27px;
-
     line-height: 1.08;
-
     margin-bottom: 12px;
 }
 
 .visual-card p:not(.visual-tipo) {
     color: #dce7f2;
-
     font-size: 15px;
-
     line-height: 1.55;
-
     margin-bottom: 19px;
 }
 
 .visual-etiquetas {
     display: flex;
-
     flex-wrap: wrap;
-
     gap: 7px;
 }
 
 .visual-etiquetas span {
-    padding:
-        8px
-        12px;
-
+    padding: 8px 12px;
     border-radius: 999px;
-
-    background:
-        rgba(15,66,117,0.80);
-
-    border:
-        1px
-        solid
-        rgba(255,255,255,0.15);
-
+    background: rgba(15,66,117,0.80);
+    border: 1px solid rgba(255,255,255,0.15);
     color: white;
-
     font-size: 12px;
-
     font-weight: 700;
-
-    backdrop-filter:
-        blur(4px);
+    backdrop-filter: blur(4px);
 }
 
 /* =========================================
@@ -718,22 +471,13 @@ button,
 
 .cta-servicios {
     margin-top: 48px;
-
-    padding:
-        36px
-        40px;
-
+    padding: 36px 40px;
     border-radius: 20px;
-
     display: flex;
-
     align-items: center;
     justify-content: space-between;
-
     gap: 30px;
-
     color: white;
-
     background:
         linear-gradient(
             110deg,
@@ -744,19 +488,14 @@ button,
 
 .cta-mini {
     color: var(--naranja);
-
     font-size: 12px;
-
     font-weight: 900;
-
     letter-spacing: 2px;
-
     margin-bottom: 9px;
 }
 
 .cta-servicios h3 {
     font-size: 31px;
-
     margin-bottom: 7px;
 }
 
@@ -766,11 +505,8 @@ button,
 
 .cta-boton {
     min-width: 210px;
-
     background: var(--naranja);
-
     border: none;
-
     color: white;
 }
 
@@ -779,15 +515,9 @@ button,
 ========================================= */
 
 .detalle-servicios {
-    padding:
-        95px
-        4%
-        120px;
-
+    padding: 95px 4% 120px;
     position: relative;
-
     overflow: hidden;
-
     background:
         radial-gradient(
             circle at 90% 10%,
@@ -799,48 +529,31 @@ button,
 
 .detalle-servicios::before {
     content: "";
-
     position: absolute;
-
     width: 155px;
     height: 800px;
-
     top: -170px;
     right: -60px;
-
     background: var(--naranja);
-
-    transform:
-        rotate(24deg);
+    transform: rotate(24deg);
 }
 
 .detalle-servicios::after {
     content: "";
-
     position: absolute;
-
     width: 2px;
     height: 850px;
-
     right: 190px;
     top: -210px;
-
-    transform:
-        rotate(24deg);
-
-    background:
-        rgba(255,255,255,0.16);
+    transform: rotate(24deg);
+    background: rgba(255,255,255,0.16);
 }
 
 .contenedor-detalle {
     width: 100%;
-
     max-width: 1500px;
-
     margin: 0 auto;
-
     position: relative;
-
     z-index: 3;
 }
 
@@ -849,33 +562,14 @@ button,
 ========================================= */
 
 .titulo-categorias {
-    padding:
-        30px
-        25px
-        28px;
-
+    padding: 30px 25px 28px;
     margin-bottom: 28px;
-
     display: grid;
-
-    grid-template-columns:
-        1fr
-        0.8fr;
-
+    grid-template-columns: 1fr 0.8fr;
     gap: 55px;
-
     align-items: end;
-
-    border-top:
-        1px
-        solid
-        rgba(255,255,255,0.08);
-
-    border-bottom:
-        1px
-        solid
-        rgba(255,255,255,0.08);
-
+    border-top: 1px solid rgba(255,255,255,0.08);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
     background:
         linear-gradient(
             90deg,
@@ -886,32 +580,20 @@ button,
 
 .titulo-categorias p {
     color: var(--naranja);
-
     font-size: 12px;
-
     font-weight: 900;
-
     letter-spacing: 2px;
-
     margin-bottom: 9px;
 }
 
 .titulo-categorias h2 {
-    font-size:
-        clamp(
-            36px,
-            4vw,
-            56px
-        );
-
+    font-size: clamp(36px, 4vw, 56px);
     line-height: 1;
 }
 
 .titulo-categorias > span {
     color: #cbd8e7;
-
     font-size: 17px;
-
     line-height: 1.6;
 }
 
@@ -921,57 +603,44 @@ button,
 
 .categoria-detalle {
     margin-bottom: 26px;
-
     display: grid;
-
-    grid-template-columns:
-        32%
-        68%;
-
+    grid-template-columns: 32% 68%;
     border-radius: 22px;
-
     overflow: hidden;
-
-    border:
-        1px
-        solid
-        rgba(255,255,255,0.12);
-
+    border: 1px solid rgba(255,255,255,0.12);
     background:
         linear-gradient(
             135deg,
             rgba(7,45,88,0.96),
             rgba(3,25,52,0.98)
         );
-
-    box-shadow:
-        0
-        15px
-        38px
-        rgba(0,0,0,0.18);
-
+    box-shadow: 0 15px 38px rgba(0,0,0,0.18);
     scroll-margin-top: 30px;
 }
 
 .categoria-foto {
     min-height: 100%;
-
     background-color: #0b3769;
-
-    background-size: cover;
-
-    background-position: center;
-
     position: relative;
+    overflow: hidden;
+}
+
+.categoria-foto img {
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    position: absolute;
+    inset: 0;
+    object-fit: cover;
+    object-position: center;
 }
 
 .categoria-foto::after {
     content: "";
-
     position: absolute;
-
     inset: 0;
-
+    z-index: 1;
+    pointer-events: none;
     background:
         linear-gradient(
             90deg,
@@ -980,48 +649,15 @@ button,
         );
 }
 
-.categoria-foto-tramites {
-    background-image:
-        url("servicio-tramites.jpg");
-}
-
-.categoria-foto-migracion {
-    background-image:
-        url("servicio-migracion.jpg");
-}
-
-.categoria-foto-diseno {
-    background-image:
-        url("servicio-diseno.jpg");
-}
-
-.categoria-foto-soporte {
-    background-image:
-        url("servicio-soporte.jpg");
-}
-
-.categoria-foto-impresion {
-    background-image:
-        url("servicio-impresion.jpg");
-}
-
-.categoria-foto-equipo {
-    background-image:
-        url("servicio-equipos.jpg");
-}
-
 .categoria-contenido {
     padding: 34px;
 }
 
 .categoria-cabecera {
     display: flex;
-
     align-items: flex-start;
     justify-content: space-between;
-
     gap: 28px;
-
     margin-bottom: 26px;
 }
 
@@ -1031,64 +667,42 @@ button,
 
 .detalle-etiqueta {
     color: var(--naranja);
-
     font-size: 11px;
-
     font-weight: 900;
-
     letter-spacing: 2px;
-
     margin-bottom: 8px;
 }
 
 .categoria-cabecera h3 {
     font-size: 32px;
-
     margin-bottom: 10px;
 }
 
 .categoria-cabecera p:last-child {
     color: #c9d6e5;
-
     font-size: 16px;
-
     line-height: 1.55;
 }
 
 .boton-detalle {
     min-height: 50px;
-
-    padding:
-        0
-        22px;
-
+    padding: 0 22px;
     border-radius: 10px;
-
     display: inline-flex;
-
     align-items: center;
     justify-content: center;
-
     gap: 10px;
-
     background: var(--naranja);
-
     color: white;
-
     text-decoration: none;
-
     font-weight: 900;
-
     white-space: nowrap;
-
     transition: 0.2s;
 }
 
 .boton-detalle:hover {
     background: var(--naranja-claro);
-
-    transform:
-        translateY(-2px);
+    transform: translateY(-2px);
 }
 
 /* =========================================
@@ -1097,94 +711,54 @@ button,
 
 .grupos-servicios {
     display: grid;
-
-    grid-template-columns:
-        repeat(
-            3,
-            1fr
-        );
-
+    grid-template-columns: repeat(3, 1fr);
     gap: 11px;
 }
 
 .grupos-servicios article {
     min-height: 135px;
-
     padding: 18px;
-
     border-radius: 13px;
-
-    background:
-        rgba(2,19,41,0.55);
-
-    border:
-        1px
-        solid
-        rgba(255,255,255,0.08);
-
+    background: rgba(2,19,41,0.55);
+    border: 1px solid rgba(255,255,255,0.08);
     transition: 0.2s;
 }
 
 .grupos-servicios article:hover {
-    border-color:
-        rgba(255,121,0,0.38);
-
-    transform:
-        translateY(-3px);
+    border-color: rgba(255,121,0,0.38);
+    transform: translateY(-3px);
 }
 
 .grupos-servicios h4 {
     font-size: 17px;
-
     line-height: 1.25;
-
     margin-bottom: 10px;
 }
 
 .grupos-servicios h4::before {
     content: "";
-
     display: inline-block;
-
     width: 7px;
     height: 7px;
-
     margin-right: 9px;
-
     border-radius: 50%;
-
     background: var(--naranja);
-
     vertical-align: middle;
 }
 
 .grupos-servicios p {
     color: #bfcddd;
-
     font-size: 14px;
-
     line-height: 1.5;
 }
 
 .aviso-categoria {
     margin-top: 20px;
-
-    padding:
-        15px
-        17px;
-
-    border-left:
-        4px
-        solid
-        var(--naranja);
-
-    background:
-        rgba(255,255,255,0.045);
-
+    padding: 15px 17px;
+    border-left: 4px solid var(--naranja);
+    background: rgba(255,255,255,0.045);
     color: #cedae6;
-
     font-size: 14px;
-
     line-height: 1.55;
 }
 
@@ -1194,20 +768,12 @@ button,
 
 .cta-detalle-final {
     margin-top: 48px;
-
-    padding:
-        38px
-        42px;
-
+    padding: 38px 42px;
     border-radius: 20px;
-
     display: flex;
-
     align-items: center;
     justify-content: space-between;
-
     gap: 30px;
-
     background:
         linear-gradient(
             110deg,
@@ -1218,49 +784,32 @@ button,
 
 .cta-detalle-final p {
     font-size: 12px;
-
     font-weight: 900;
-
     letter-spacing: 2px;
-
     margin-bottom: 7px;
 }
 
 .cta-detalle-final h3 {
     font-size: 34px;
-
     margin-bottom: 7px;
 }
 
 .cta-detalle-final > div > span {
-    color:
-        rgba(255,255,255,0.90);
+    color: rgba(255,255,255,0.90);
 }
 
 .cta-detalle-final > a {
     min-height: 54px;
-
-    padding:
-        0
-        22px;
-
+    padding: 0 22px;
     display: inline-flex;
-
     align-items: center;
     justify-content: center;
-
     gap: 10px;
-
     border-radius: 10px;
-
     background: var(--azul-profundo);
-
     color: white;
-
     text-decoration: none;
-
     font-weight: 900;
-
     white-space: nowrap;
 }
 
@@ -1269,15 +818,9 @@ button,
 ========================================= */
 
 .seccion-nosotros {
-    padding:
-        120px
-        7%
-        125px;
-
+    padding: 120px 7% 125px;
     position: relative;
-
     overflow: hidden;
-
     background:
         radial-gradient(
             circle at 75% 30%,
@@ -1289,44 +832,28 @@ button,
 
 .contenedor-nosotros {
     width: 100%;
-
     max-width: 1400px;
-
     margin: 0 auto;
-
     position: relative;
-
     z-index: 3;
 }
 
 .decoracion-nosotros-1 {
     width: 165px;
     height: 900px;
-
     position: absolute;
-
     right: -90px;
     top: -170px;
-
-    transform:
-        rotate(27deg);
-
+    transform: rotate(27deg);
     background: var(--naranja);
-
     opacity: 0.85;
 }
 
 .nosotros-intro {
     display: grid;
-
-    grid-template-columns:
-        1.25fr
-        0.75fr;
-
+    grid-template-columns: 1.25fr 0.75fr;
     gap: 80px;
-
     align-items: center;
-
     margin-bottom: 80px;
 }
 
@@ -1335,17 +862,9 @@ button,
 }
 
 .nosotros-texto h2 {
-    font-size:
-        clamp(
-            44px,
-            5vw,
-            72px
-        );
-
+    font-size: clamp(44px, 5vw, 72px);
     line-height: 1;
-
     letter-spacing: -2px;
-
     margin-bottom: 30px;
 }
 
@@ -1355,13 +874,9 @@ button,
 
 .nosotros-descripcion {
     max-width: 720px;
-
     color: #d2deea;
-
     font-size: 18px;
-
     line-height: 1.7;
-
     margin-bottom: 16px;
 }
 
@@ -1371,58 +886,42 @@ button,
 
 .filosofia-wedo {
     min-height: 400px;
-
     padding: 36px;
-
     border-radius: 22px;
-
     position: relative;
-
     overflow: hidden;
-
     background:
         linear-gradient(
             145deg,
             rgba(255,255,255,0.08),
             rgba(255,255,255,0.025)
         );
-
-    border:
-        1px
-        solid
-        rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.12);
 }
 
 .isotipo-filosofia {
     width: 145px;
     height: 100px;
-
     display: flex;
-
     align-items: center;
-
     margin-bottom: 28px;
 }
 
 .isotipo-filosofia img {
     width: 135px;
+    height: auto;
 }
 
 .filosofia-wedo > p {
     color: #b6c6d8;
-
     font-size: 13px;
-
     font-weight: 900;
-
     letter-spacing: 2px;
-
     margin-bottom: 18px;
 }
 
 .filosofia-wedo h3 {
     font-size: 40px;
-
     line-height: 1.05;
 }
 
@@ -1433,9 +932,7 @@ button,
 .linea-filosofia {
     width: 75px;
     height: 5px;
-
     background: var(--naranja);
-
     margin-top: 30px;
 }
 
@@ -1445,78 +942,53 @@ button,
 
 .pilares-wedo {
     display: grid;
-
-    grid-template-columns:
-        repeat(
-            3,
-            1fr
-        );
-
+    grid-template-columns: repeat(3, 1fr);
     gap: 22px;
-
     margin-bottom: 80px;
 }
 
 .pilar {
     min-height: 245px;
-
     padding: 31px;
-
     border-radius: 18px;
-
     background:
         linear-gradient(
             145deg,
             rgba(14,56,105,0.72),
             rgba(6,38,79,0.72)
         );
-
-    border:
-        1px
-        solid
-        rgba(255,255,255,0.11);
+    border: 1px solid rgba(255,255,255,0.11);
 }
 
 .pilar-encabezado {
     display: flex;
-
     align-items: center;
-
     gap: 11px;
-
     margin-bottom: 24px;
 }
 
 .pilar-linea {
     width: 38px;
     height: 4px;
-
     background: var(--naranja);
-
     border-radius: 10px;
 }
 
 .pilar-etiqueta {
     color: var(--naranja);
-
     font-size: 12px;
-
     font-weight: 900;
-
     letter-spacing: 2px;
 }
 
 .pilar h3 {
     font-size: 28px;
-
     margin-bottom: 14px;
 }
 
 .pilar p {
     color: #d5e0ec;
-
     font-size: 17px;
-
     line-height: 1.6;
 }
 
@@ -1526,48 +998,31 @@ button,
 
 .proceso-wedo {
     padding: 52px;
-
     border-radius: 25px;
-
     background:
         linear-gradient(
             135deg,
             rgba(12,52,101,0.94),
             rgba(4,27,57,0.98)
         );
-
-    border:
-        1px
-        solid
-        rgba(255,255,255,0.11);
+    border: 1px solid rgba(255,255,255,0.11);
 }
 
 .proceso-titulo {
     max-width: 820px;
-
     margin-bottom: 42px;
 }
 
 .proceso-titulo > p:first-child {
     color: var(--naranja);
-
     font-size: 17px;
-
     font-weight: 900;
-
     letter-spacing: 2.2px;
-
     margin-bottom: 13px;
 }
 
 .proceso-titulo h3 {
-    font-size:
-        clamp(
-            38px,
-            4vw,
-            54px
-        );
-
+    font-size: clamp(38px, 4vw, 54px);
     margin-bottom: 15px;
 }
 
@@ -1577,75 +1032,50 @@ button,
 
 .proceso-intro {
     color: #c7d5e4;
-
     font-size: 18px;
-
     line-height: 1.6;
 }
 
 .pasos-proceso {
     display: grid;
-
-    grid-template-columns:
-        repeat(
-            4,
-            1fr
-        );
-
+    grid-template-columns: repeat(4, 1fr);
     gap: 18px;
 }
 
 .paso {
     min-height: 220px;
-
     padding: 26px;
-
     border-radius: 17px;
-
     background:
         linear-gradient(
             145deg,
             rgba(17,65,119,0.88),
             rgba(8,43,86,0.92)
         );
-
-    border:
-        1px
-        solid
-        rgba(255,255,255,0.10);
+    border: 1px solid rgba(255,255,255,0.10);
 }
 
 .icono-paso {
     width: 50px;
     height: 50px;
-
     margin-bottom: 23px;
-
     display: flex;
-
     align-items: center;
     justify-content: center;
-
     border-radius: 12px;
-
     background: var(--naranja);
-
     font-size: 23px;
-
     font-weight: 900;
 }
 
 .paso h4 {
     font-size: 24px;
-
     margin-bottom: 12px;
 }
 
 .paso p {
     color: #d3dfeb;
-
     font-size: 16px;
-
     line-height: 1.55;
 }
 
@@ -1654,13 +1084,8 @@ button,
 ========================================= */
 
 .seccion-contacto {
-    padding:
-        115px
-        7%
-        125px;
-
+    padding: 115px 7% 125px;
     color: var(--azul-profundo);
-
     background:
         linear-gradient(
             135deg,
@@ -1671,30 +1096,19 @@ button,
 
 .contenedor-contacto {
     width: 100%;
-
     max-width: 1400px;
-
     margin: 0 auto;
 }
 
 .contacto-encabezado {
     max-width: 780px;
-
     margin-bottom: 58px;
 }
 
 .contacto-encabezado h2 {
-    font-size:
-        clamp(
-            48px,
-            6vw,
-            78px
-        );
-
+    font-size: clamp(48px, 6vw, 78px);
     line-height: 0.98;
-
     letter-spacing: -3px;
-
     margin-bottom: 22px;
 }
 
@@ -1704,29 +1118,20 @@ button,
 
 .contacto-encabezado > p:last-child {
     color: #5b697b;
-
     font-size: 19px;
-
     line-height: 1.6;
 }
 
 .contacto-grid {
     display: grid;
-
-    grid-template-columns:
-        0.9fr
-        1.1fr;
-
+    grid-template-columns: 0.9fr 1.1fr;
     gap: 32px;
 }
 
 .contacto-info {
     padding: 38px;
-
     border-radius: 22px;
-
     color: white;
-
     background:
         linear-gradient(
             145deg,
@@ -1737,135 +1142,84 @@ button,
 
 .etiqueta-contacto {
     color: var(--naranja);
-
     font-size: 13px;
-
     font-weight: 900;
-
     letter-spacing: 2px;
-
     margin-bottom: 12px;
 }
 
 .cobertura-contacto h3 {
     font-size: 31px;
-
     line-height: 1.15;
-
     margin-bottom: 18px;
 }
 
 .cobertura-contacto p {
     color: #d2deea;
-
     font-size: 17px;
-
     line-height: 1.65;
-
     margin-bottom: 11px;
 }
 
 .datos-contacto {
     margin-top: 30px;
-
     display: flex;
-
     flex-direction: column;
-
     gap: 12px;
 }
 
 .dato-contacto {
     min-height: 75px;
-
-    padding:
-        12px
-        14px;
-
+    padding: 12px 14px;
     display: flex;
-
     align-items: center;
-
     gap: 15px;
-
     border-radius: 13px;
-
     text-decoration: none;
-
     color: white;
-
-    background:
-        rgba(255,255,255,0.06);
-
-    border:
-        1px
-        solid
-        rgba(255,255,255,0.10);
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.10);
 }
 
 .dato-icono {
     width: 47px;
     min-width: 47px;
     height: 47px;
-
     display: flex;
-
     align-items: center;
     justify-content: center;
-
     border-radius: 11px;
-
     background: var(--naranja);
-
     font-weight: 900;
 }
 
 .dato-contacto span {
     display: block;
-
     color: #aebfd1;
-
     font-size: 10px;
-
     font-weight: 900;
-
     letter-spacing: 1.4px;
-
     margin-bottom: 4px;
 }
 
 .dato-contacto strong {
     display: block;
-
     font-size: 17px;
-
     word-break: break-word;
 }
 
 .whatsapp-directo {
     min-height: 57px;
-
     margin-top: 25px;
-
-    padding:
-        0
-        22px;
-
+    padding: 0 22px;
     display: inline-flex;
-
     align-items: center;
     justify-content: center;
-
     gap: 10px;
-
     border-radius: 10px;
-
     background: var(--naranja);
-
     color: white;
-
     text-decoration: none;
-
     font-weight: 900;
 }
 
@@ -1875,15 +1229,9 @@ button,
 
 .formulario-contacto {
     padding: 38px;
-
     border-radius: 22px;
-
     background: white;
-
-    border:
-        1px
-        solid
-        #dce3eb;
+    border: 1px solid #dce3eb;
 }
 
 .formulario-titulo {
@@ -1892,25 +1240,19 @@ button,
 
 .formulario-titulo > p {
     color: var(--naranja);
-
     font-size: 12px;
-
     font-weight: 900;
-
     letter-spacing: 2px;
-
     margin-bottom: 9px;
 }
 
 .formulario-titulo h3 {
     font-size: 34px;
-
     margin-bottom: 9px;
 }
 
 .formulario-titulo span {
     color: #647186;
-
     font-size: 16px;
 }
 
@@ -1920,11 +1262,8 @@ button,
 
 .campo label {
     display: block;
-
     font-size: 16px;
-
     font-weight: 800;
-
     margin-bottom: 8px;
 }
 
@@ -1932,26 +1271,13 @@ button,
 .campo select,
 .campo textarea {
     width: 100%;
-
-    padding:
-        15px
-        16px;
-
-    border:
-        1px
-        solid
-        #d6dee8;
-
+    padding: 15px 16px;
+    border: 1px solid #d6dee8;
     border-radius: 10px;
-
     background: #f8fafc;
-
     color: var(--azul-profundo);
-
     font-size: 16px;
-
     font-family: Arial, Helvetica, sans-serif;
-
     outline: none;
 }
 
@@ -1959,35 +1285,26 @@ button,
 .campo select:focus,
 .campo textarea:focus {
     border-color: var(--naranja);
-
     background: white;
 }
 
 .campo textarea {
     min-height: 130px;
-
     resize: vertical;
 }
 
 .boton-formulario {
     width: 100%;
-
     border: none;
-
     background: var(--naranja);
-
     color: white;
 }
 
 .aviso-formulario {
     margin-top: 14px;
-
     color: #748195;
-
     font-size: 13px;
-
     line-height: 1.5;
-
     text-align: center;
 }
 
@@ -1996,106 +1313,76 @@ button,
 ========================================= */
 
 .footer-wedo {
-    padding:
-        65px
-        7%
-        24px;
-
+    padding: 65px 7% 24px;
     background: #020e20;
 }
 
 .footer-contenido {
     max-width: 1400px;
-
-    margin:
-        0
-        auto
-        45px;
-
+    margin: 0 auto 45px;
     display: grid;
-
-    grid-template-columns:
-        1.4fr
-        0.6fr
-        1fr;
-
+    grid-template-columns: 1.4fr 0.6fr 1fr;
     gap: 50px;
 }
 
 .footer-logo {
     width: 260px;
     height: 90px;
-
     position: relative;
-
     overflow: hidden;
-
     margin-bottom: 14px;
 }
 
 .footer-logo img {
     width: 290px;
     height: 290px;
-
     position: absolute;
-
     left: -9px;
     top: -115px;
-
     object-fit: contain;
 }
 
 .footer-marca p {
     color: #aab9ca;
-
     font-size: 16px;
-
     line-height: 1.6;
 }
 
 .footer-enlaces {
     display: flex;
-
     flex-direction: column;
-
-    gap: 13px;
+    gap: 4px;
 }
 
 .footer-enlaces a,
 .footer-contacto a {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
     color: #d9e3ed;
-
     text-decoration: none;
 }
 
 .footer-contacto {
     display: flex;
-
     flex-direction: column;
-
-    gap: 11px;
+    gap: 4px;
 }
 
 .footer-contacto strong {
     color: var(--naranja);
+    margin-bottom: 4px;
 }
 
 .footer-inferior {
     max-width: 1400px;
-
     margin: 0 auto;
-
     padding-top: 22px;
-
-    border-top:
-        1px
-        solid
-        rgba(255,255,255,0.08);
+    border-top: 1px solid rgba(255,255,255,0.08);
 }
 
 .footer-inferior p {
     color: #7d8da1;
-
     font-size: 13px;
 }
 
@@ -2107,30 +1394,19 @@ button,
 
     .servicios-intro {
         grid-template-columns: 1fr;
-
         gap: 25px;
     }
 
     .visuales-servicios {
-        grid-template-columns:
-            repeat(
-                2,
-                1fr
-            );
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .categoria-detalle {
-        grid-template-columns:
-            35%
-            65%;
+        grid-template-columns: 35% 65%;
     }
 
     .grupos-servicios {
-        grid-template-columns:
-            repeat(
-                2,
-                1fr
-            );
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .nosotros-intro {
@@ -2138,11 +1414,7 @@ button,
     }
 
     .pasos-proceso {
-        grid-template-columns:
-            repeat(
-                2,
-                1fr
-            );
+        grid-template-columns: repeat(2, 1fr);
     }
 
 }
@@ -2155,7 +1427,6 @@ button,
 
     .titulo-categorias {
         grid-template-columns: 1fr;
-
         gap: 25px;
     }
 
@@ -2172,16 +1443,11 @@ button,
     }
 
     .footer-contenido {
-        grid-template-columns:
-            1fr
-            1fr;
+        grid-template-columns: 1fr 1fr;
     }
 
     .footer-marca {
-        grid-column:
-            1
-            /
-            -1;
+        grid-column: 1 / -1;
     }
 
 }
@@ -2192,22 +1458,15 @@ button,
 
 @media (max-width: 800px) {
 
-    /* ENCABEZADO */
-
     .encabezado {
         height: 115px;
-
-        padding:
-            12px
-            6%;
+        padding: 12px 6%;
     }
 
     .contenedor-logo {
         width: 220px;
         height: 82px;
-
         position: relative;
-
         z-index: 61;
     }
 
@@ -2219,116 +1478,62 @@ button,
     .logo {
         width: 250px;
         height: 250px;
-
         left: -8px;
         top: -98px;
     }
-
-    /* MENÚ */
 
     .boton-menu {
         display: flex;
     }
 
     .menu {
-        width:
-            calc(
-                100% - 24px
-            );
-
+        width: calc(100% - 24px);
         position: absolute;
-
         top: 102px;
         left: 12px;
-
         padding: 16px;
-
         flex-direction: column;
-
         align-items: stretch;
-
         gap: 5px;
-
         border-radius: 16px;
-
-        background:
-            rgba(3,21,47,0.98);
-
-        border:
-            1px
-            solid
-            rgba(255,255,255,0.10);
-
-        box-shadow:
-            0
-            18px
-            45px
-            rgba(0,0,0,0.28);
-
+        background: rgba(3,21,47,0.98);
+        border: 1px solid rgba(255,255,255,0.10);
+        box-shadow: 0 18px 45px rgba(0,0,0,0.28);
         opacity: 0;
-
         visibility: hidden;
-
         pointer-events: none;
-
-        transform:
-            translateY(-15px);
-
+        transform: translateY(-15px);
         transition: 0.25s;
     }
 
     .menu.menu-abierto {
         opacity: 1;
-
         visibility: visible;
-
         pointer-events: auto;
-
-        transform:
-            translateY(0);
+        transform: translateY(0);
     }
 
     .menu a {
         min-height: 50px;
-
-        padding:
-            0
-            15px;
-
+        padding: 0 15px;
         display: flex;
-
         align-items: center;
     }
 
-    /* HERO */
-
     .hero {
         min-height: 100svh;
-
-        padding:
-            155px
-            6%
-            70px;
+        padding: 155px 6% 70px;
     }
 
     .hero-etiqueta {
         max-width: 280px;
-
         font-size: 11px;
-
         line-height: 1.45;
     }
 
     .hero h1 {
-        font-size:
-            clamp(
-                48px,
-                13vw,
-                64px
-            );
-
+        font-size: clamp(48px, 13vw, 64px);
         line-height: 0.97;
-
         letter-spacing: -2px;
     }
 
@@ -2347,19 +1552,12 @@ button,
 
     .decoracion {
         width: 65%;
-
         right: -50%;
-
         opacity: 0.4;
     }
 
-    /* SERVICIOS */
-
     .seccion-servicios {
-        padding:
-            78px
-            6%
-            85px;
+        padding: 78px 6% 85px;
     }
 
     .servicios-intro {
@@ -2368,7 +1566,6 @@ button,
 
     .servicios-intro h2 {
         font-size: 43px;
-
         letter-spacing: -2px;
     }
 
@@ -2378,7 +1575,6 @@ button,
 
     .visuales-servicios {
         grid-template-columns: 1fr;
-
         gap: 15px;
     }
 
@@ -2392,32 +1588,20 @@ button,
 
     .cta-servicios {
         flex-direction: column;
-
         align-items: flex-start;
-
-        padding:
-            28px
-            23px;
+        padding: 28px 23px;
     }
 
     .cta-boton {
         width: 100%;
     }
 
-    /* DETALLE */
-
     .detalle-servicios {
-        padding:
-            75px
-            5%
-            85px;
+        padding: 75px 5% 85px;
     }
 
     .titulo-categorias {
-        padding:
-            26px
-            20px;
-
+        padding: 26px 20px;
         margin-bottom: 24px;
     }
 
@@ -2430,9 +1614,7 @@ button,
     }
 
     .categoria-contenido {
-        padding:
-            26px
-            20px;
+        padding: 26px 20px;
     }
 
     .categoria-cabecera {
@@ -2457,30 +1639,20 @@ button,
 
     .cta-detalle-final {
         flex-direction: column;
-
         align-items: flex-start;
-
-        padding:
-            29px
-            23px;
+        padding: 29px 23px;
     }
 
     .cta-detalle-final > a {
         width: 100%;
     }
 
-    /* NOSOTROS */
-
     .seccion-nosotros {
-        padding:
-            82px
-            6%
-            85px;
+        padding: 82px 6% 85px;
     }
 
     .nosotros-intro {
         gap: 38px;
-
         margin-bottom: 55px;
     }
 
@@ -2490,7 +1662,6 @@ button,
 
     .filosofia-wedo {
         min-height: 350px;
-
         padding: 28px;
     }
 
@@ -2500,20 +1671,16 @@ button,
 
     .pilares-wedo {
         grid-template-columns: 1fr;
-
         margin-bottom: 55px;
     }
 
     .pilar {
         min-height: auto;
-
         padding: 27px;
     }
 
     .proceso-wedo {
-        padding:
-            32px
-            21px;
+        padding: 32px 21px;
     }
 
     .proceso-titulo h3 {
@@ -2528,13 +1695,8 @@ button,
         min-height: auto;
     }
 
-    /* CONTACTO */
-
     .seccion-contacto {
-        padding:
-            80px
-            6%
-            85px;
+        padding: 80px 6% 85px;
     }
 
     .contacto-encabezado h2 {
@@ -2543,27 +1705,19 @@ button,
 
     .contacto-info,
     .formulario-contacto {
-        padding:
-            27px
-            21px;
+        padding: 27px 21px;
     }
 
     .cobertura-contacto h3 {
         font-size: 28px;
     }
 
-    /* FOOTER */
-
     .footer-wedo {
-        padding:
-            55px
-            6%
-            24px;
+        padding: 55px 6% 24px;
     }
 
     .footer-contenido {
         grid-template-columns: 1fr;
-
         gap: 30px;
     }
 
