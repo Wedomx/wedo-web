@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://wedomx.github.io/wedo-web/sitemap.xml
